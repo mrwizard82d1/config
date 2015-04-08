@@ -1,0 +1,10 @@
+[user]
+	name = Lawrence Allan Jones
+	email = lawrence.jones@openlink.com
+[core]
+[core]
+	editor = cmd //c C:/Windows/gvim.bat -f '%*'
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
