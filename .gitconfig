@@ -8,6 +8,22 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+
+[difftool "p4merge"]
+	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$LOCAL" "$REMOTE"
+
+[diff]
+	tool = p4merge
+
+[mergetool "p4merge"]
+	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+
+[merge]
+	tool = p4merge
+
 [alias]
 	co = checkout
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
