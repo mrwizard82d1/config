@@ -3,7 +3,7 @@
 	email = lawrence.jones@openlink.com
 [core]
 	editor = cmd //c C:/Windows/gvim.bat -f '%*'
-	excludesfile = $CYGHOME/.gitignore
+
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -29,3 +29,7 @@
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
 	unstage = reset HEAD
 	st = status
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
