@@ -26,6 +26,7 @@
 
 [alias]
 	co = checkout
+	br = branch
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
 	unstage = reset HEAD
 	st = status
