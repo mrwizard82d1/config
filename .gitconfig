@@ -3,8 +3,8 @@
 	email = lawrence.jones@openlink.com
 
 [core]
-	editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -w"
-	# editor = cmd //c /c/Windows/gvim.bat -f '%*'
+	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -w"
+	editor = cmd //c /c/Windows/gvim.bat -f '%*'
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe \"%*\"
 
 	excludesfile = c:/Users/ljones/.config/git/ignore
