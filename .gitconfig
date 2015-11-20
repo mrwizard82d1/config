@@ -10,6 +10,11 @@
 
 	excludesfile = c:/Users/ljones/.config/git/ignore
 
+	# Other teams at OpenLink reported issues if they set autocrlf to true.
+	# (I believe this is the default value when installing Git for Windows).
+	# Although I'm skeptical, I'm willing to try it out.
+	autocrlf = false
+
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -41,3 +46,5 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[commit]
+	template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
