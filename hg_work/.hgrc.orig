@@ -1,0 +1,37 @@
+# Mercurial configuration
+
+[ui]
+username=Larry Jones <l.jones@sigmacubed.com>
+editor=C:/PROGRA~2/JED/bin/wjed.exe
+# editor=C:/PROGRA~2/JED/bin/jed.exe
+# editor=C:/Windows/gvim.bat -f
+ignore=~/.hgignore
+ssh="c:\Program Files\TortoiseHg\TortoisePlink.exe" -ssh -2 -batch -C
+
+# Configure extensions
+[extensions]
+# Enable color extensions
+color =
+mq = 
+hgext.extdiff =
+
+# Configure the color extensions
+[color]
+mode=win32
+
+# Configure extension to convert repositories
+[extensions]
+hgext.convert=
+
+[extdiff]
+# cmd.winmerge = c:\PROGRA~2\WinMerge\WinMergeU.exe
+# opts.winmerge = /r /e /x /u /wl
+
+cmd.vdiff=kdiff3
+
+[merge-tools]
+p4.priority = 100
+p4.premerge = True  # change this to False if you're don't trust hg's internal merge
+p4.executable = c:\Program Files\Perforce\p4merge.exe
+p4.gui = True
+p4.args = $base $local $other $output

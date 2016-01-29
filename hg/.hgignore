@@ -1,0 +1,7 @@
+# Files globally ignored by Mercurial.
+
+# Use glob syntax
+syntax: glob
+
+# Ignore emacs backup files
+*~

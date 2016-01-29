@@ -1,0 +1,20 @@
+# Mercurial configuration
+
+[ui]
+username=Larry Jones <mrwizard82d1@earthlink.net>
+editor=C:/PROGRA~1/JED/bin/wjed.exe
+ignore=~/.hgignore
+
+# Configure extensions
+[extensions]
+# Enable color extensions
+color =
+mq = 
+
+# Configure the color extensions
+[color]
+mode=win32
+
+# Configure extension to convert repositories
+[extensions]
+hgext.convert=
