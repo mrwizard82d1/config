@@ -1,0 +1,50 @@
+[user]
+	name = Lawrence Allan Jones
+	email = lawrence.jones@openlink.com
+
+[core]
+	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -m"
+	editor = cmd //c /c/Windows/gvim.bat -f '%*'
+	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
+	# editor = atom --wait
+
+	excludesfile = c:/Users/ljones/.config/git/ignore
+
+	# Other teams at OpenLink reported issues if they set autocrlf to true.
+	# (I believe this is the default value when installing Git for Windows).
+	# Although I'm skeptical, I'm willing to try it out.
+	autocrlf = false
+
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+
+[difftool "p4merge"]
+	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$LOCAL" "$REMOTE"
+
+[diff]
+	tool = p4merge
+
+[mergetool "p4merge"]
+	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+
+[merge]
+	tool = p4merge
+
+[alias]
+	co = checkout
+	br = branch
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
+	unstage = reset HEAD
+	st = status
+
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[commit]
+	template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
