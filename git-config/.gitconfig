@@ -1,14 +1,14 @@
 [user]
-	name = Lawrence Allan Jones
-	email = lawrence.jones@openlink.com
+	name = Larry Jones
+	email = larryj@blinds.com
 
 [core]
 	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -m"
-	editor = cmd //c /c/Windows/gvim.bat -f '%*'
+	editor = /c/PROGRA~2/vim/vim74/gvim -f '%*'
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
 	# editor = atom --wait
 
-	excludesfile = c:/Users/ljones/.config/git/ignore
+	excludesfile = c:/Users/larryj/.config/git/ignore
 
 	# Other teams at OpenLink reported issues if they set autocrlf to true.
 	# (I believe this is the default value when installing Git for Windows).
@@ -20,20 +20,31 @@
 	smudge = git hawser smudge %f
 	required = true
 
-[difftool "p4merge"]
-	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$LOCAL" "$REMOTE"
+# [difftool "p4merge"]
+#	 cmd = /c/PROGRA~1/Perforce/p4merge.exe "$LOCAL" "$REMOTE"
+
+[difftool "kdiff3"]
+	cmd = c:/PROGRA~1/kdiff3/kdiff3.exe
+	trustExitCode = false
 
 [diff]
-	tool = p4merge
+#	tool = p4merge
+	tool = kdiff3
+	guitool = kdiff3
 
-[mergetool "p4merge"]
-	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
+[mergetool "kdiff3"]
+    path = c:/PROGRA~1/kdiff3/kdiff3.exe
+    keepBackup = false
+    trustExitCode = false
+# [mergetool "p4merge"]
+#	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+#	keepTemporaries = false
+#	trustExitCode = false
+#	keepBackup = false
 
-[merge]
-	tool = p4merge
+# [merge]
+#	tool = p4merge
+	tool = kdiff3
 
 [alias]
 	co = checkout
@@ -47,4 +58,4 @@
 	smudge = git lfs smudge %f
 	required = true
 [commit]
-	template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
+	# template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
