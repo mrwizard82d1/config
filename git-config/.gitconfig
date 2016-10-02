@@ -1,19 +1,19 @@
 [user]
 	name = Lawrence Allan Jones
-	email = lawrence.jones@openlink.com
+	email = mrwizard82d1@gmail.com
 
+[core]
+	autocrlf = input
 [core]
 	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -m"
 	editor = cmd //c /c/Windows/gvim.bat -f '%*'
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
 	# editor = atom --wait
 
-	excludesfile = c:/Users/ljones/.config/git/ignore
+	excludesfile = /Users/larry/.gitignore
 
-	# Other teams at OpenLink reported issues if they set autocrlf to true.
-	# (I believe this is the default value when installing Git for Windows).
-	# Although I'm skeptical, I'm willing to try it out.
-	autocrlf = false
+	autocrlf = input # Mac OS X
+	# autocrlf = true # Windows
 
 [filter "hawser"]
 	clean = git hawser clean %f
@@ -42,9 +42,13 @@
 	unstage = reset HEAD
 	st = status
 
+[push]
+	default = simple
+
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
 [commit]
-	template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
+#	template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
