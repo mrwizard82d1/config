@@ -1,5 +1,5 @@
 version 6.0
-:syntax on
+syntax on
 set autoindent
 set backspace=indent,eol,start
 set backup
@@ -18,5 +18,8 @@ set shell=D:/cygwin/bin/bash.exe
 set tabstop=4
 set shiftwidth=4
 set textwidth=72
-:filetype plugin indent on
-:set guifont=Lucida_Sans_Typewriter:h10:cANSI
+filetype plugin indent on
+set guifont=Lucida_Sans_Typewriter:h10:cANSI
+
+" Load pathogen
+execute pathogen#infect()
