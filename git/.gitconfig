@@ -11,7 +11,6 @@
 	# editor = atom --wait
 
 #	excludesfile = c:/Users/larryj/.config/git/ignore
-	excludesfile = /Users/larryj/.config/git/ignore
 
 	autocrlf = input # Mac OS X
 	# autocrlf = true # Windows
