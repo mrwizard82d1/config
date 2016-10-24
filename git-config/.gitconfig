@@ -4,7 +4,7 @@
 
 [core]
 	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -m"
-	editor = /c/PROGRA~2/vim/vim74/gvim -f '%*'
+    # editor = /c/PROGRA~2/vim/vim74/gvim -f '%*'
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
 	# editor = atom --wait
 
@@ -13,7 +13,7 @@
 	# Other teams at OpenLink reported issues if they set autocrlf to true.
 	# (I believe this is the default value when installing Git for Windows).
 	# Although I'm skeptical, I'm willing to try it out.
-	autocrlf = false
+	autocrlf = true
 
 [filter "hawser"]
 	clean = git hawser clean %f
@@ -22,9 +22,8 @@
 
 # [difftool "p4merge"]
 #	 cmd = /c/PROGRA~1/Perforce/p4merge.exe "$LOCAL" "$REMOTE"
-
 [difftool "kdiff3"]
-	cmd = c:/PROGRA~1/kdiff3/kdiff3.exe
+	path = c:/PROGRA~1/kdiff3/kdiff3.exe
 	trustExitCode = false
 
 [diff]
