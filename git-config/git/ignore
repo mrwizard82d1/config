@@ -1,7 +1,0 @@
-# Files globally ignored by Git.
-
-# Ignore emacs backup files
-*~
-
-# Ignore vim swp files
-*swp
