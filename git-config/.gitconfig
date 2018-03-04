@@ -10,7 +10,7 @@
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
 	# editor = atom --wait
 
-#	excludesfile = c:/Users/larryj/.config/git/ignore
+	# excludesfile = c:/Users/larryj/.config/git/ignore
 
 	autocrlf = input # Mac OS X
 	excludesfile = ~/.gitignore
@@ -30,16 +30,16 @@
 	# trustExitCode = false
 
 [diff]
-	tool = p4merge
-# 	tool = kdiff3
-# 	guitool = kdiff3
+	# tool = p4merge
+ 	tool = kdiff3
+ 	guitool = kdiff3
 
-[mergetool "p4merge"]
+# [mergetool "p4merge"]
 # 	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
+#	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+#	keepTemporaries = false
+#	trustExitCode = false
+#	keepBackup = false
 
 [mergetool "kdiff3"]
     path = c:/PROGRA~1/kdiff3/kdiff3.exe
@@ -47,8 +47,8 @@
     trustExitCode = false
 
 [merge]
-	tool = p4merge
-#	tool = kdiff3
+#	tool = p4merge
+	tool = kdiff3
 
 [alias]
 	co = checkout
