@@ -10,10 +10,10 @@
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
 	# editor = atom --wait
 
-#	excludesfile = c:/Users/larryj/.config/git/ignore
+	excludesfile = c:/Users/larry.jones/.config/git/ignore
 
-	autocrlf = input # Mac OS X
-	# autocrlf = true # Windows
+	# autocrlf = input # Mac OS X
+	autocrlf = true # Windows
 
 [filter "hawser"]
 	clean = git hawser clean %f
