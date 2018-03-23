@@ -1,6 +1,6 @@
 [user]
-	name = Lawrence Allan Jones
-	email = mrwizard82d1@gmail.com
+	name = Larry Jones
+	email = larry.jones@reveal-energy.com
 	# name = Larry Jones
 	# email = larryj@blinds.com
 
@@ -20,34 +20,47 @@
 	smudge = git hawser smudge %f
 	required = true
 
+[diff]
+	tool = meld
+#	tool = p4merge
+# 	tool = kdiff3
+# 	guitool = kdiff3
+
+[difftool]
+	prompt = false
+
 [difftool "p4merge"]
 	# cmd = /c/PROGRA~1/Perforce/p4merge.exe "$LOCAL" "$REMOTE"
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$REMOTE"
+	# cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$REMOTE"
 
 [difftool "kdiff3"]
 	# cmd = c:/PROGRA~1/kdiff3/kdiff3.exe
 	# trustExitCode = false
 
-[diff]
-	tool = p4merge
-# 	tool = kdiff3
-# 	guitool = kdiff3
+[difftool "meld"]
+	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$REMOTE"
+
+[merge]
+	tool = meld
+#	tool = p4merge
+#	tool = kdiff3
 
 [mergetool "p4merge"]
 # 	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
+#	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+#	keepTemporaries = false
+#	trustExitCode = false
+#	keepBackup = false
 
 [mergetool "kdiff3"]
-    path = c:/PROGRA~1/kdiff3/kdiff3.exe
-    keepBackup = false
-    trustExitCode = false
+#    path = c:/PROGRA~1/kdiff3/kdiff3.exe
+#    keepBackup = false
+#    trustExitCode = false
 
-[merge]
-	tool = p4merge
-#	tool = kdiff3
+[mergetool "meld"]
+	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+#	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+	keepBackup = false
 
 [alias]
 	co = checkout
