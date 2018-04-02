@@ -19,7 +19,14 @@ set tabstop=4
 set shiftwidth=4
 set textwidth=72
 filetype plugin indent on
-set guifont=Lucida_Sans_Typewriter:h10:cANSI
+set guifont=Consolas:h10:cANSI
+set lines=35 columns=147
+
+" Solarized dark
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Load pathogen
 execute pathogen#infect()
+
