@@ -30,3 +30,6 @@ colorscheme solarized
 " Load pathogen
 execute pathogen#infect()
 
+" Add matlab comments
+autocmd FileType matlab setlocal commentstring=%\ %s
+
