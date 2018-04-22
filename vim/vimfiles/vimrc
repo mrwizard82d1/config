@@ -21,7 +21,6 @@ set shiftwidth=4
 set textwidth=72
 filetype plugin indent on
 set guifont=Consolas:h10:cANSI
-set lines=35 columns=147
 
 " Solarized dark
 syntax enable
