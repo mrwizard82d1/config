@@ -15,6 +15,7 @@ set selectmode=mouse,key
 set whichwrap=b,s,<,>,[,]
 " vim: set ft=vim :
 " Windows only: set shell=D:/cygwin/bin/bash.exe
+set shellslash
 set tabstop=4
 set shiftwidth=4
 set textwidth=72
@@ -31,6 +32,14 @@ colorscheme vividchalk
 " Load pathogen
 execute pathogen#infect()
 
-" Add matlab comments
+" Matlab
+"
+" Syntax
+source $VIMRUNTIME/macros/matchit.vim
+
+" Use mlint
+autocmd BufEnter *.m    compiler mlint
+
+" comments
 autocmd FileType matlab setlocal commentstring=%\ %s
 
