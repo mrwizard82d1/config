@@ -4,6 +4,8 @@ set autoindent
 set backspace=indent,eol,start
 set backup
 set diffexpr=MyDiff()
+set expandtab
+set smarttab
 set helplang=En
 set history=50
 set hlsearch
