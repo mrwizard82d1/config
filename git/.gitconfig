@@ -1,8 +1,6 @@
 [user]
 	name = Larry Jones
 	email = larry.jones@reveal-energy.com
-	# name = Larry Jones
-	# email = larryj@blinds.com
 
 [core]
 	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -m"
@@ -21,10 +19,10 @@
 	required = true
 
 [diff]
-	tool = meld
+#	tool = meld
 #	tool = p4merge
-# 	tool = kdiff3
-# 	guitool = kdiff3
+ 	tool = kdiff3
+ 	guitool = kdiff3
 
 [difftool]
 	prompt = false
@@ -34,16 +32,16 @@
 	# cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$REMOTE"
 
 [difftool "kdiff3"]
-	# cmd = c:/PROGRA~1/kdiff3/kdiff3.exe
-	# trustExitCode = false
+	path = c:/PROGRA~1/kdiff3/kdiff3.exe
+	trustExitCode = false
 
 [difftool "meld"]
-	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$REMOTE"
+#	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$REMOTE"
 
 [merge]
-	tool = meld
+#	tool = meld
 #	tool = p4merge
-#	tool = kdiff3
+	tool = kdiff3
 
 [mergetool "p4merge"]
 # 	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
@@ -53,9 +51,9 @@
 #	keepBackup = false
 
 [mergetool "kdiff3"]
-#    path = c:/PROGRA~1/kdiff3/kdiff3.exe
+    path = c:/PROGRA~1/kdiff3/kdiff3.exe
 #    keepBackup = false
-#    trustExitCode = false
+    trustExitCode = false
 
 [mergetool "meld"]
 	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
