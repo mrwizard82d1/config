@@ -11,7 +11,8 @@
 	excludesfile = c:/Users/larry.jones/.config/git/ignore
 
 	# autocrlf = input # Mac OS X
-	autocrlf = true # Windows
+	# autocrlf = true # Windows
+	ignorecase = false
 
 [filter "hawser"]
 	clean = git hawser clean %f
