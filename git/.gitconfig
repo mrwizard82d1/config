@@ -20,6 +20,7 @@
 	required = true
 
 [diff]
+	tool = bc
 	tool = meld
 #	tool = p4merge
  	tool = kdiff3
@@ -40,7 +41,11 @@
 [difftool "meld"]
 	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$REMOTE"
 
+[difftool "bc"]
+	cmd = \"/c/PROGRA~1/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+
 [merge]
+	tool = bc
 	tool = meld
 #	tool = p4merge
 	tool = kdiff3
@@ -59,8 +64,11 @@
 
 [mergetool "meld"]
 	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
-#	cmd = /c/PROGRA~2/Meld/Meld.exe "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 	keepBackup = false
+
+[mergetool "bc"]
+	cmd = \"/c/PROGRA~1/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
+	trustExitcode = true
 
 [alias]
 	co = checkout
