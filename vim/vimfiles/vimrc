@@ -3,6 +3,7 @@ syntax on
 set autoindent
 set backspace=indent,eol,start
 set backup
+set cc=+1,-4,-9
 " set diffexpr=MyDiff()
 set expandtab
 set number
