@@ -3,8 +3,9 @@ syntax on
 set autoindent
 set backspace=indent,eol,start
 set backup
-set diffexpr=MyDiff()
+" set diffexpr=MyDiff()
 set expandtab
+set number
 set smarttab
 set helplang=En
 set history=50
