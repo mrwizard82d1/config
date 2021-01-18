@@ -26,6 +26,7 @@
  	tool = kdiff3
 # 	guitool = kdiff3
  	guitool = meld
+	tool = bc
 
 [difftool]
 	prompt = false
@@ -43,12 +44,14 @@
 
 [difftool "bc"]
 	cmd = \"/c/PROGRA~1/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+	path = c:/Program Files/Beyond Compare 4/BComp.exe
 
 [merge]
 	tool = bc
 	tool = meld
 #	tool = p4merge
 	tool = kdiff3
+	tool = bc
 
 [mergetool "p4merge"]
 # 	cmd = /c/PROGRA~1/Perforce/p4merge.exe "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
@@ -69,6 +72,7 @@
 [mergetool "bc"]
 	cmd = \"/c/PROGRA~1/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
 	trustExitcode = true
+	path = c:/Program Files/Beyond Compare 4/BComp.exe
 
 [alias]
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
