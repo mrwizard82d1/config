@@ -71,11 +71,18 @@
 	trustExitcode = true
 
 [alias]
-	co = checkout
-	br = branch
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
-	unstage = reset HEAD
-	st = status
+	last = log -1 --stat
+	cp = cherry-pick
+	co = checkout
+	cl = clone
+	ci = commit
+	st = status -sb
+	br = branch
+	unstage = reset HEAD --
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+
 
 [filter "lfs"]
 	clean = git lfs clean %f
@@ -83,4 +90,5 @@
 	required = true
 
 [commit]
+	template = C:/Users/larry.jones/.gitmessage
 	# template = c:/cygwin64/home/ljones/work/projects/rightangle/env/.gitmessage.txt
