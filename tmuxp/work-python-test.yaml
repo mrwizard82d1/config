@@ -1,0 +1,15 @@
+session_name: work-python-test
+windows:
+  - focus: 'true'
+    layout: main-vertical
+    options: {
+      automatic-rename: 'off',
+      main-pane-width: 89,
+      }
+    panes:
+      - focus: 'true'
+        shell_command: 
+          - cd /mnt/c/Users/larry.jones/work/projects/orchid-python-api/test/
+          - emacsclient -t .
+      - init
+    window_name: time_calc

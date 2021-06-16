@@ -1,0 +1,54 @@
+session_name: orchid-python-api
+windows:
+- focus: 'true'
+  layout: main-vertical
+  # layout: 1b27,320x85,0,0{160x85,0,0,0,159x85,161,0,1}
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 89,
+    }
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  - shell-command:
+      - powershell.exe
+      - poetry shell
+      - powershell
+  start_directory: /mnt/c/src/orchid-python-api
+  window_name: working
+# - layout: c73f,320x85,0,0,2
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 89,
+    }
+  panes:
+  - focus: 'true'
+    shell_command:
+      - emacsclient -t .
+  - shell_command: zsh
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/test-utils-cljs
+  window_name: test-utils
+- layout: c740,320x85,0,0,3
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /mnt/c/src/OrchidApp
+  window_name: Orchid
+# - layout: 1b2d,320x85,0,0{160x85,0,0,4,159x85,161,0,5}
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 89,
+    }
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /mnt/c/Users/larry.jones/employee/reveal/status
+    - emacsclient -t .
+  - shell_command:
+    - cd /home/lajones
+    - zsh
+  window_name: status

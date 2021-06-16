@@ -1,0 +1,14 @@
+session_name: time_calc_ex
+windows:
+- focus: 'true'
+  layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 89,
+    }
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  - zsh
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/time_calc_ex
+  window_name: time_calc_ex
