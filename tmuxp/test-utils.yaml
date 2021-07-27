@@ -1,0 +1,22 @@
+session_name: test-utils
+windows:
+- layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 89
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  - shell_command:
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/test-utils-cljs
+  window_name: working
+- layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 89
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  - shell_command:
+  start_directory: /mnt/c/Users/larry.jones/employee/reveal/status
+  window_name: status

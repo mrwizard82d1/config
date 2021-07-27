@@ -1,44 +1,28 @@
-session_name: orchid-python-api
+session_name: think-bayes-2e
 windows:
 - focus: 'true'
   layout: main-vertical
-  # layout: 1b27,320x85,0,0{160x85,0,0,0,159x85,161,0,1}
-  options: {
-    automatic-rename: 'off',
-    main-pane-width: 89,
-    }
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 89
   panes:
   - focus: 'true'
-    shell_command:
-  - shell-command:
+    shell_command: 
+  - shell_command:
       # I would expect the following commands to work but they seem to have no affect
       # - powershell.exe
       # - poetry shell
       # - powershell
       # - $GitPromptSettings RepositoriesInWhichToDisableFileStatus = "C:\src\orchid-python-api"
-  start_directory: /mnt/c/src/orchid-python-api
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/think_bayes_2e
   window_name: working
-# - layout: c73f,320x85,0,0,2
-- layout: main-vertical
-  options: {
-    automatic-rename: 'off',
-    main-pane-width: 89,
-    }
-  panes:
-  - focus: 'true'
-    shell_command:
-      - emacsclient -t .
-  - shell_command: zsh
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/test-utils-cljs
-  window_name: test-utils
-- layout: c740,320x85,0,0,3
-  options:
+- options:
     automatic-rename: 'off'
   panes:
   - focus: 'true'
-    shell_command: zsh
-  start_directory: /mnt/c/src/OrchidApp
-  window_name: Orchid
+    shell_command: emacsclient -t .
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/think_bayes_2e
+  window_name: editor
 # - layout: 1b2d,320x85,0,0{160x85,0,0,4,159x85,161,0,5}
 - layout: main-vertical
   options: {
