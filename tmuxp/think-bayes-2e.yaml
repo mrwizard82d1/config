@@ -16,14 +16,14 @@ windows:
       # - $GitPromptSettings RepositoriesInWhichToDisableFileStatus = "C:\src\orchid-python-api"
   start_directory: /mnt/c/Users/larry.jones/professional/projects/think_bayes_2e
   window_name: working
-- options:
+- layout: main-vertical
+  options:
     automatic-rename: 'off'
   panes:
   - focus: 'true'
     shell_command: emacsclient -t .
   start_directory: /mnt/c/Users/larry.jones/professional/projects/think_bayes_2e
   window_name: editor
-# - layout: 1b2d,320x85,0,0{160x85,0,0,4,159x85,161,0,5}
 - layout: main-vertical
   options: {
     automatic-rename: 'off',
