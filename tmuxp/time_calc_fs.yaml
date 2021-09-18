@@ -1,4 +1,4 @@
-session_name: time_calc_ex
+session_name: time_calc_fs
 windows:
 - focus: 'true'
   layout: main-vertical
@@ -10,5 +10,5 @@ windows:
   - focus: 'true'
     shell_command: emacsclient -t .
   - zsh
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/time_calc_ex
-  window_name: time_calc_ex
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/time_calc_fs
+  window_name: time_calc_fs

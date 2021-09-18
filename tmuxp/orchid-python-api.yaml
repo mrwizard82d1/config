@@ -5,7 +5,7 @@ windows:
   # layout: 1b27,320x85,0,0{160x85,0,0,0,159x85,161,0,1}
   options: {
     automatic-rename: 'off',
-    main-pane-width: 89,
+    main-pane-width: 107,
     }
   panes:
   - focus: 'true'
@@ -22,7 +22,7 @@ windows:
 - layout: main-vertical
   options: {
     automatic-rename: 'off',
-    main-pane-width: 89,
+    main-pane-width: 107,
     }
   panes:
   - focus: 'true'
@@ -43,7 +43,7 @@ windows:
 - layout: main-vertical
   options: {
     automatic-rename: 'off',
-    main-pane-width: 89,
+    main-pane-width: 107,
     }
   panes:
   - focus: 'true'

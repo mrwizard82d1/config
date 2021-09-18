@@ -1,4 +1,4 @@
-session_name: test-utils
+session_name: time-calc-clj
 windows:
 - layout: main-vertical
   options:
@@ -8,7 +8,7 @@ windows:
   - focus: 'true'
     shell_command: emacsclient -t .
   - shell_command:
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/test-utils-cljs
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/time-calc-clj
   window_name: working
 - layout: main-vertical
   options:
