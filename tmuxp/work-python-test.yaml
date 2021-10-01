@@ -4,7 +4,7 @@ windows:
     layout: main-vertical
     options: {
       automatic-rename: 'off',
-      main-pane-width: 89,
+      main-pane-width: 107,
       }
     panes:
       - focus: 'true'

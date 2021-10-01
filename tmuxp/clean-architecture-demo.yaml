@@ -4,7 +4,7 @@ windows:
   layout: main-vertical
   options:
     automatic-rename: 'off'
-    main-pane-width: 89
+    main-pane-width: 107
   panes:
   - focus: 'true'
     shell_command: 
@@ -14,7 +14,7 @@ windows:
 - layout: main-vertical
   options:
     automatic-rename: 'off'
-    main-pane-width: 89
+    main-pane-width: 107
   panes:
   - focus: 'true'
     shell_command: emacsclient -t .
@@ -23,7 +23,7 @@ windows:
 - layout: main-vertical
   options: {
     automatic-rename: 'off',
-    main-pane-width: 89,
+    main-pane-width: 107,
     }
   panes:
   - focus: 'true'
