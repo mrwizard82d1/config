@@ -1,0 +1,14 @@
+session_name: projects
+windows:
+- focus: 'true'
+  layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  - zsh
+  start_directory: /mnt/c/Users/larry.jones/professional/projects
+  window_name: projects
