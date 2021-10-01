@@ -1,0 +1,24 @@
+session_name: brew
+windows:
+- layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 107
+  panes:
+  - focus: 'true'
+  - shell_command:
+  start_directory: /mnt/c/src/Brew
+  window_name: working
+
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /mnt/c/Users/larry.jones/employee/reveal/status
+    - emacsclient -t .
+  - shell_command:
+  window_name: status
