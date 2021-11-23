@@ -1,0 +1,34 @@
+session_name: julia-manual-code
+windows:
+- focus: 'true'
+  layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 107
+  panes:
+  - focus: 'true'
+    shell_command: julia
+  - shell_command: 
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/julia-manual-code
+  window_name: working
+- layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 107
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/julia-manual-code
+  window_name: editor
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /mnt/c/Users/larry.jones/employee/reveal/status
+    - emacsclient -t .
+  - shell_command:
+  window_name: status
