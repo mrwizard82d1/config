@@ -7,9 +7,9 @@ windows:
     main-pane-width: 107
   panes:
   - focus: 'true'
-    shell_command: rterm.exe
+    shell_command: R
   - shell_command:
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/r-for-beginners
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/r_for_beginners
   window_name: working
 - layout: main-vertical
   options:
@@ -18,7 +18,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: emacsclient -t .
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/r-for-beginners
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/r_for_beginners
   window_name: editor
 - layout: main-vertical
   options: {
