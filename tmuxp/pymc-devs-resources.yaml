@@ -1,0 +1,33 @@
+session_name: pymc-devs-resources
+windows:
+- focus: 'true'
+  layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 107
+  panes:
+  - focus: 'true'
+    shell_command: 
+  - shell_command:
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/pymc-devs-resources
+  window_name: working
+- layout: main-vertical
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/pymc-devs-resources
+  window_name: editor
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /mnt/c/Users/larry.jones/employee/reveal/status
+    - emacsclient -t .
+  - shell_command:
+  window_name: status

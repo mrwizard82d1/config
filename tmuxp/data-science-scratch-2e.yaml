@@ -1,0 +1,38 @@
+session_name: data-science-scratch-2e
+windows:
+- focus: 'true'
+  layout: main-vertical
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 107
+  panes:
+  - focus: 'true'
+    shell_command: 
+  - shell_command:
+      # I would expect the following commands to work but they seem to have no affect
+      # - powershell.exe
+      # - poetry shell
+      # - powershell
+      # - $GitPromptSettings RepositoriesInWhichToDisableFileStatus = "C:\src\orchid-python-api"
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/data-science-scratch-2e
+  window_name: working
+- layout: main-vertical
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/data-science-scratch-2e
+  window_name: editor
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /mnt/c/Users/larry.jones/employee/reveal/status
+    - emacsclient -t .
+  - shell_command:
+  window_name: status

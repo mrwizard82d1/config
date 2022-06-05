@@ -1,15 +1,16 @@
 session_name: brew
 windows:
-- layout: main-vertical
+- focus: 'true'
+  layout: main-vertical
   options:
     automatic-rename: 'off'
     main-pane-width: 107
   panes:
   - focus: 'true'
-  - shell_command:
+    shell_command: zsh
+  - shell_command: zsh
   start_directory: /mnt/c/src/Brew
   window_name: working
-
 - layout: main-vertical
   options: {
     automatic-rename: 'off',
@@ -17,8 +18,41 @@ windows:
     }
   panes:
   - focus: 'true'
-    shell_command:
-    - cd /mnt/c/Users/larry.jones/employee/reveal/status
-    - emacsclient -t .
-  - shell_command:
+    shell_command: emacsclient -t .
+  - shell_command: zsh
+  start_directory: /mnt/c/src/Brew
+  window_name: editor
+# - layout: c73f,320x85,0,0,2
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  - shell_command: zsh
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/test-utils-cljs
+  window_name: test-utils
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient -t .
+  - shell_command: zsh
+  start_directory: /mnt/c/Users/larry.jones/employee/reveal/status
   window_name: status
+# - layout: c73f,320x85,0,0,2
+- layout: main-vertical
+  options: {
+    automatic-rename: 'off',
+    main-pane-width: 107,
+    }
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  - shell_command: zsh
+  window_name: other

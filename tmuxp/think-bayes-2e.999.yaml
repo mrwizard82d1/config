@@ -1,0 +1,21 @@
+session_name: think-bayes-2e
+windows:
+- focus: 'true'
+  layout: f570,149x35,0,0{89x35,0,0,15,59x35,90,0,16}
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 89
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  - zsh
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/think_bayes_2e
+  window_name: working
+- layout: 6137,149x35,0,0,18
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: emacsclient
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/think_bayes_2e
+  window_name: editor
