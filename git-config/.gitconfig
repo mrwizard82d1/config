@@ -7,6 +7,7 @@
 [core]
 	# editor = "'/C/PROGRA~2/SUBLIM~1/sublime_text.exe' -m"
 	# editor = /c/PROGRA~2/vim/vim74/gvim -f '%*'
+	# editor = "c:/tools/neovim/nvim-win64/bin/nvim.exe"
 	# editor = start //wait C:/emacs-24.4/bin/emacs.exe /"%*/"
 	# editor = atom --wait
 
