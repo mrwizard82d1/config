@@ -30,7 +30,7 @@ windows:
     shell_command: emacsclient -t .
   - shell_command:
   start_directory: /mnt/c/Users/larry.jones/professional/projects/learning-react-book
-  window_name: course-software
+  window_name: book-software
 - layout: main-vertical
   options:
     automatic-rename: 'off'
