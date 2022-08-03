@@ -1,15 +1,15 @@
-session_name: essential-ff-fs
+session_name: diceware-cljs
 windows:
 - focus: 'true'
   layout: main-vertical
-  options:
-    automatic-rename: 'off'
-    main-pane-width: 107
+#  options:
+#    automatic-rename: 'off'
+#    main-pane-width: 107
   panes:
   - focus: 'true'
     shell_command: 
   - shell_command:
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/EssentialFuncFirstFs
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/diceware-cljs
   window_name: working
 - layout: main-vertical
   options:
@@ -17,7 +17,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: emacsclient -t .
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/EssentialFuncFirstFs
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/diceware-cljs
   window_name: editor
 - layout: main-vertical
   options: {

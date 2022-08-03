@@ -8,7 +8,7 @@ windows:
     }
   panes:
   - focus: 'true'
-    shell_command: emacsclient -t .
+    shell_commab emacsclient -t .
   - zsh
   start_directory: /mnt/c/Users/larry.jones/professional/projects/time_calc_ex
   window_name: time_calc_ex

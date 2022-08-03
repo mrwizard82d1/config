@@ -1,4 +1,4 @@
-session_name: essential-ff-fs
+session_name: web-dev-clj-3
 windows:
 - focus: 'true'
   layout: main-vertical
@@ -9,7 +9,7 @@ windows:
   - focus: 'true'
     shell_command: 
   - shell_command:
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/EssentialFuncFirstFs
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/web-dev-clj-3
   window_name: working
 - layout: main-vertical
   options:
@@ -17,13 +17,12 @@ windows:
   panes:
   - focus: 'true'
     shell_command: emacsclient -t .
-  start_directory: /mnt/c/Users/larry.jones/professional/projects/EssentialFuncFirstFs
+  start_directory: /mnt/c/Users/larry.jones/professional/projects/web-dev-clj-3
   window_name: editor
 - layout: main-vertical
-  options: {
-    automatic-rename: 'off',
-    main-pane-width: 107,
-    }
+  options:
+    automatic-rename: 'off'
+    main-pane-width: 107
   panes:
   - focus: 'true'
     shell_command:
