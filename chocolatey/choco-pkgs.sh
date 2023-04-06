@@ -18,5 +18,3 @@ choco install ag --version 2.2.5 -y
 choco install sharpkeys.portable --version 3.9.4 -y
 choco install plantuml --version 1.2023.5 -y
 choco install vscode --version 1.76.2 -y
-choco install beyondcompare --version 4.4.6.27483 -y
-choco install miniconda3 --version 4.12.0 -y
